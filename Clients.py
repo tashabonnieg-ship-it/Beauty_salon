@@ -341,13 +341,12 @@ for _, row in summary.iterrows():
     print(f"   Топ клиенты: {row['most_frequent_clients_by_days']}")
 
 print("\n" + "="*50)
-print("🏆 ЛУЧШИЕ ПОКАЗАТЕЛИ")
+print("ЛУЧШИЕ ПОКАЗАТЕЛИ")
 print("="*50)
 best_month_revenue = summary.loc[summary['monthly_revenue'].idxmax()]
 best_month_hourly = summary.loc[summary['revenue_per_hour'].idxmax()]
 
-print(f"📈 Лучший по доходу: {best_month_revenue['month_year']} - {best_month_revenue['monthly_revenue']:,.0f} руб.")
-print(f"⚡ Лучший по доход/час: {best_month_hourly['month_year']} - {best_month_hourly['revenue_per_hour']:,.0f} руб.")
-print(f"👑 Самые частые клиенты: {summary['most_frequent_clients_by_days'].iloc[-1]}")
-print(f"🔥 Популярные услуги: {', '.join(summary['most_popular_procedure'].unique())}")
-
+print(f"Лучший по доходу: {best_month_revenue['month_year']} - {best_month_revenue['monthly_revenue']:,.0f} руб.")
+print(f"Лучший по доход/час: {best_month_hourly['month_year']} - {best_month_hourly['revenue_per_hour']:,.0f} руб.")
+print(f"Самые частые клиенты: {summary['most_frequent_clients_by_days'].iloc[-1]}")
+print(f"Популярные услуги: {', '.join(summary['most_popular_procedure'].unique())}")
