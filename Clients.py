@@ -327,9 +327,8 @@ plt.subplots_adjust(top=0.90, hspace=0.5, wspace=0.4)  # Увеличил рас
 plt.savefig('анализ_салона.png', dpi=300, bbox_inches='tight')
 plt.show()
 
-# ОТДЕЛЬНАЯ ТЕКСТОВАЯ СВОДКА
 print("\n" + "="*50)
-print("💎 СВОДКА ПО МЕСЯЦАМ")
+print("СВОДКА ПО МЕСЯЦАМ")
 print("="*50)
 
 for _, row in summary.iterrows():
