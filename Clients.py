@@ -332,7 +332,7 @@ print("СВОДКА ПО МЕСЯЦАМ")
 print("="*50)
 
 for _, row in summary.iterrows():
-    print(f"\n📅 {row['month_year']}:")
+    print(f"\n {row['month_year']}:")
     print(f"   Доход: {row['monthly_revenue']:,.0f} руб.")
     print(f"   Доход/час: {row['revenue_per_hour']:,.0f} руб.")
     print(f"   Клиенты: {row['unique_clients']}, Процедуры: {row['total_procedures']}")
